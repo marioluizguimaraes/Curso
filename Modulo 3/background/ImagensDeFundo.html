@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Imagens De Fundo</title>
+    <style>
+        body{
+            background-image: url('Imagens/thumb2-metal-dotted-texture-macro-metal-grid-black-metal-background-metal-textures.jpg');
+        }
+        main{
+            position: absolute;
+            top: 30%;
+            left: 15%;
+        }
+        .quadrado{
+            display : inline-block;
+            margin  : 10px;
+            width   : 225px;
+            height  : 225px;
+            padding : 25px;
+            border  : 3px solid black;
+
+            box-shadow    :0px 0px 10px rgba(0, 0, 0, 0.438) ;
+            border-radius : 10px
+        }
+        #q1{
+            background-color: dodgerblue
+        }
+        #q2{
+            background-image: linear-gradient( 35deg, rgb(228, 65, 15), rgb(236, 240, 22));
+        }
+        #q3{
+            background-image: url('Imagens/plano-de-fundo-texturizado-de-papel-azul-amassado_53876-101379.jpg');
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="quadrado" id="q1"></div>
+        <div class="quadrado" id="q2"></div>
+        <div class="quadrado" id="q3"></div>
+    </main>
+</body>
+</html>
