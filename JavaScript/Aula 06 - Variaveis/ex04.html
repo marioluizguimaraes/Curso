@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 - Variáveis na tela</title>
+    <style>
+
+    </style>
+</head>
+<body>  
+
+    <script>
+
+        var nome = window.prompt('qual é o seu nome?');
+
+        document.write(`Olá, ${nome}! seu nome tem ${nome.length} letras! <br>`) // a função length diz quantos caracteres o texto possui
+
+        document.writeln(`Seu nome em maiúsculo é: ${nome.toUpperCase()} <br>`) // a função toUpperCase() converte a string para ficar em letras maiúsculas
+
+        document.writeln(`Seu nome em minúsculos é: ${nome.toLowerCase()} <br>`) // a função toLowerCase() converte a string para ficar em letras minúsculo
+    </script>
+
+</body>
+</html>

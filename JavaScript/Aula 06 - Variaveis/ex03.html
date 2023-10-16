@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 - Converção de Variáveis</title>
+    <style>
+        h3 strong{
+            color: crimson;
+        }
+        p strong{
+            color: rgb(16, 179, 16);
+        }
+    </style>
+</head>
+<body>  
+
+    <script>
+
+        var nome = window.prompt('qual é o seu nome?');
+        window.alert('Seja bem vindo, ' + nome + '!');
+
+        window.confirm(nome + ', você deseja fazer uma soma de tres valores inteiros?');
+
+        var n1  = Number.parseInt(window.prompt('Digite o Primeiro Número!'));
+        var n2  = parseInt(window.prompt('Digite o Segundo Número!'));
+        var n3  = Number(window.prompt('Digite o Terceiro Número!'));
+        
+        var soma = n1 + n2 + n3;
+
+        alert('A soma de ' + n1 + ' + ' + n2 + ' + ' + n3 + ' é igual à ' + String(soma.toFixed(2)) + '!'); // Com concatenação  "+". O comando toFixed() diz quantas casas decimais eu quero que apareça!
+
+        alert(`A soma de ${n1} + ${n2} + ${n3} é igual a ${String(soma)}!`); // com template string
+
+    </script>
+
+    <h3>
+        Os valores enviados janela do prompt é do tipo String. Para converter do tipo <Strong>String</Strong> para <Strong>Number</Strong>, posso usar os comandos:
+    </h3>
+    <br>
+
+    <p>
+         <Strong>Number.parseInt(n)</Strong> ou <Strong>parseInt(n)</Strong>  Para converter para inteiro,
+    </p>
+
+    <br>
+
+    <p>
+        <Strong>Number.parseFloat(n)</Strong> ou <Strong>parseFloat(n)</Strong>  Para converter para flutuante,
+    </p>
+
+    <br>
+
+    <p>
+        <Strong>Number(n)</Strong> Para converção automatica,
+    </p>
+    <br>
+
+    <h3>
+        Para converter de <Strong>Number</Strong> para <Strong>String</Strong>, usamos os seguintes comandos:
+    </h3>
+    <br>
+
+    <p>
+         <Strong>String(n)</Strong> ou <Strong>n.toString()</Strong>
+    </p>
+
+
+   
+</body>
+</html>
