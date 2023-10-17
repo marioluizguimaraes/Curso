@@ -11,8 +11,6 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
     if (nome && email && senha && senha === confirmaSenha) {
         mensagem.className = 'mensagem-sucesso';
         mensagem.innerText = 'Você foi cadastrado com sucesso!';
-        window. location="cadastrado.html"
-        document.getElementById("nome_user").innerText = nome;
 
     } else {
         mensagem.className = 'mensagem-erro';

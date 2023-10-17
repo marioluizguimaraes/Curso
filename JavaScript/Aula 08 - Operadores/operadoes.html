@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 08 - Operadores</title>
+    <style>
+
+    </style>
+</head>
+<body>  
+
+    <script>
+
+        var nome    = window.prompt('Qual é o seu nome?');
+        var idade   = window.prompt('Qual é a sua Idade?');
+
+        var nota    = Number(window.prompt('qual é a sua nota?'));
+        avaliar(nota);
+
+        function avaliar(params) {
+        var resultado = nota >= 7 ? 'aprovado!' : 'reprovado!';  // teste ? 'se for true' : 'se for false'
+        window.alert(resultado);
+
+        mensagem  = nota >= 8 & idade <= 16 ? `Você é muito inteligente, ${nome}!`  : `Boa, ${nome}!`;
+        document.write(mensagem);
+
+        }
+        
+        
+
+    </script>
+
+</body>
+</html>
