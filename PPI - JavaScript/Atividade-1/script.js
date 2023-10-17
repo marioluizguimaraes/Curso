@@ -22,3 +22,7 @@ document.getElementById('cadastroForm').addEventListener('reset', function() {
     let mensagem = document.getElementById('mensagem');
     mensagem.className = 'hidden';
 });
+
+/*
+
+*/
