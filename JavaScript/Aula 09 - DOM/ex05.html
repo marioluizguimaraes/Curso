@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09 - Aprendendo DOM</title>
+</head>
+<body>
+    
+    <h1 class="assuntos">Usando DOM em javaScript</h1>
+
+    <p class="conteudo" id="txt1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos corrupti, dolor libero laboriosam unde nihil vel asperiores tempora necessitatibus est voluptates numquam ex perferendis sed quisquam quia officiis atque soluta.
+    </p>
+
+    <p class="conteudo" id="comentario1"></p>
+
+
+    <script>
+        //como selecionar uma tag?
+
+        //document.querySelector(); Pelo seletor 
+        var assunto = document.querySelector("h1.assuntos");
+        assunto.style.color = "green";
+        
+        //document.getElementsByTagName("")[0] Pela Marcação
+        
+        //document.getElementsByClassName(); Pela class
+
+        //document.getElementsById(); Pela tag
+
+    </script>
+
+</body>
+</html>
